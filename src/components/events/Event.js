@@ -3,11 +3,11 @@ import Location from './Location'
 
 class Event extends Component {
   render() {
-    console.log(this.props.events[0].name)
     return (
-      <div className="event-container">
-        <Location />
-        <h1>{this.props.events[0].name}</h1>
+      <div className="event-list-item">
+          <h1><i class="fa fa-calendar" aria-hidden="true"></i> {this.props.event.date}</h1>
+          <h2><i class="fa fa-ticket" aria-hidden="true"></i> {this.props.event.name}</h2>
+          <h2><i class="fa fa-road" aria-hidden="true"></i> {this.props.event.distance}</h2>
       </div>
     );
   }
