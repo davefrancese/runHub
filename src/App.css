@@ -17,8 +17,16 @@ header p {
   margin: -30px 0px 0px 23px;
 }
 
+/* ----- LOCATION ----- */
+
 .location-container {
   margin: 50px;
+}
+
+.location-input {
+  border: none;
+  border-radius: 3px;
+  height: 1rem;
 }
 
 .submit-button {
@@ -35,6 +43,12 @@ header p {
   color: #FDCFB7;
 }
 
+/* ----- EVENT LIST ----- */
+
+.event-list-container {
+  margin-top: 50px;
+}
+
 .event-list-item {
   border-left: 7px solid #8EB9A8;
   max-width: 400px;
@@ -45,4 +59,23 @@ header p {
 
 .event-list-item > h2, h3 {
   margin-top: -10px;
+}
+
+/* ----- SUBMIT EVENT ----- */
+
+.submit-event-container {
+  margin: 50px;
+}
+
+.submit-input {
+  margin-top: 7px;
+  border: none;
+  border-radius: 3px;
+  height: 1rem;
+  width: 200px;
+}
+
+.textarea {
+  height: 200px;
+  width: 197px;
 }

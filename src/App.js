@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import EventList from "./components/events/EventList"
+import SubmitEvent from "./components/SubmitEvent/SubmitEvent"
 
 class App extends Component {
   constructor(props) {
@@ -61,6 +62,7 @@ class App extends Component {
           <p>Finding a Run Near You.</p>
         </header>
         <EventList events={this.state.events}/>
+        <SubmitEvent />
       </div>
     );
   }

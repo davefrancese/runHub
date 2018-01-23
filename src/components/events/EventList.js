@@ -6,7 +6,7 @@ class EventList extends Component {
   render() {
     return (
       <div className="event-list-container">
-        <Location />
+        {/* <Location /> */}
         {this.props.events.map(event =>
           <Event
             key={event.id}
