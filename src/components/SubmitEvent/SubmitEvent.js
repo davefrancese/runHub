@@ -6,31 +6,37 @@ class SubmitEvent extends Component {
       <div className="submit-event-container">
         <h1>Submit a Run Event</h1>
         <form>
-          <input className="submit-input" type="text" placeholder="Event Name"/>
+          <p className="input-label">Event Name</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Event Distance</p>
+          <input className="submit-input" type="text" placeholder=""/>
           <br />
-          <input className="submit-input" type="text" placeholder="Event Distance"/>
+          <p className="input-label">Event City</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Event State</p>
+          <input className="submit-input" type="text" placeholder=""/>
           <br />
-          <input className="submit-input" type="text" placeholder="Event City"/>
+          <p className="input-label">Event Zip Code</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Event Website</p>
+          <input className="submit-input" type="text" placeholder=""/>
           <br />
-          <input className="submit-input" type="text" placeholder="Event State - ex. NC"/>
+          <p className="input-label">Contact Name</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Contact Email</p>
+          <input className="submit-input" type="text" placeholder=""/>
           <br />
-          <input className="submit-input" type="text" placeholder="Event Zip Code"/>
+          <p className="input-label">Contact Phone</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Facebook Page URL</p>
+          <input className="submit-input" type="text" placeholder=""/>
           <br />
-          <textarea className="submit-input textarea" type="text" placeholder="Event Description"></textarea>
-          <br />
-          <input className="submit-input" type="text" placeholder="Event Website"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Contact Name"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Contact Email"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Contact Phone"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Facebook Page URL"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Event Twitter"/>
-          <br />
-          <input className="submit-input" type="text" placeholder="Event Instagram"/>
+          <p className="input-label">Event Twitter</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Event Instagram</p>
+          <input className="submit-input" type="text" placeholder=""/>
+          <p className="input-label">Event Description</p>
+          <textarea className="submit-input textarea" type="text" placeholder=""></textarea>
           <br />
           <button className="submit-button">Submit</button>
         </form>

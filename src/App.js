@@ -4,54 +4,19 @@ import EventList from "./components/events/EventList"
 import SubmitEvent from "./components/SubmitEvent/SubmitEvent"
 
 class App extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
-      events: [
-        {
-          id: 100,
-          name: "Beach Trot",
-          distance: "5k",
-          date: "February 15, 2018",
-          city: "Raleigh",
-          state: "NC",
-          zip: "27604",
-          description: "This is a description all about the race.",
-          website: "www.beachtrot.com",
-          contact_name: "Brent Francese",
-          contact_email: "brent@gmail.com",
-          contact_phone: "555-555-5555",
-          isApproved: false,
-          admin_username: "brentfrancese",
-          fb_page: "www.facebook.com/events/beachtrot",
-          twitter: "@beachtrot",
-          instagram: "@beachtrot"
-        },
-        {
-          id: 200,
-          name: "Turkey Trot",
-          distance: "10k",
-          date: "November 25, 2018",
-          city: "Raleigh",
-          state: "NC",
-          zip: "27604",
-          description: "This is a description all about the turkey trot race.",
-          website: "www.turkeytrot.com",
-          contact_name: "Brent Francese",
-          contact_email: "brent@gmail.com",
-          contact_phone: "555-555-5555",
-          isApproved: false,
-          admin_username: "brentfrancese",
-          fb_page: "www.facebook.com/events/turkeytrot",
-          twitter: "@turkeytrot",
-          instagram: "@turkeytrot"
-        }
-      ]
+      events: [],
+      submits: []
     }
   }
 
-  showEvents = () => {
-
+  async componentDidMount() {
+    const response = await
+    fetch('https://runhub-api.herokuapp.com/runhub')
+    const json = await response.json()
+    this.setState({events: json})
   }
 
   render() {
