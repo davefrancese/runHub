@@ -4,6 +4,10 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+header {
+  text-align: center;
+}
+
 header h1 {
   font-family: 'Quicksand', sans-serif;
   color: #fff;
@@ -14,13 +18,51 @@ header h1 {
 header p {
   font-family: 'Quicksand', sans-serif;
   color: #3993A4;
-  margin: -30px 0px 0px 23px;
+  margin: -30px 0px 0px -53px;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+a {
+  color: #3993A4;
+  text-decoration: none;
+}
+
+* {
+  color: #fff;
+}
+
+.single-event {
+
+}
+
+.add-event {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.admin-login {
+  float: right;
+  margin-right: 70px;
+  font-size: 10px;
+}
+
+.admin-login > a{
+  color: #3993A4;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
 }
 
 /* ----- LOCATION ----- */
 
 .location-container {
-  margin: 50px;
+  margin: 100px;
 }
 
 .location-input {
@@ -40,6 +82,7 @@ header p {
   padding: 5px;
   color: #fff;
   margin-top: 10px;
+  margin-right: 3px;
 }
 
 .distance-badge {
@@ -50,6 +93,11 @@ header p {
 
 .event-list-container {
   margin-top: 50px;
+  margin-left: 50px;
+}
+
+.event-list-container > h1 {
+  margin-left: 50px;
 }
 
 .event-list-item {
@@ -76,7 +124,7 @@ header p {
   margin-top: -10px;
 }
 
-/* ----- SUBMIT EVENT ----- */
+/* ----- SUBMIT EVENT FORM ----- */
 
 .submit-event-container {
   margin: 50px;
@@ -113,4 +161,46 @@ input:focus {
 .input-label {
   font-size: 10px;
   margin-bottom: -5px;
+}
+
+/* ----- SUBMITTED EVENTS ----- */
+
+.subevent-list-item {
+  border-left: 7px solid #8EB9A8;
+  max-width: 400px;
+  padding: 0px 10px 0px 10px;
+  margin-left: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.subevent-list-item a {
+  text-decoration: none;
+  color: #3993A4;
+}
+
+/* .subevent-list-item:hover {
+  text-decoration: none;
+  background: #263A54;
+} */
+
+.subevent-list-container > h1 {
+  margin-left: 50px;
+}
+
+.subevent-list-container {
+  margin: 100px;
+}
+
+.ade-button {
+  padding-right: 3px;
+}
+
+.all-done {
+  color: #8EB9A8;
+  margin-left: 50px;
+}
+
+.view-events {
+  margin-left: 50px;
 }
