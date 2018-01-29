@@ -39,7 +39,7 @@ class App extends Component {
         <div className="main-content">
 
           <Location />
-          {/* <EventList events={this.state.events}/> */}
+          <EventList events={this.state.events}/>
           {/* <SubmitEvent /> */}
           {/* <SubEventList submits={this.state.submits}/> */}
         </div>

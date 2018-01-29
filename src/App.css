@@ -71,7 +71,7 @@ a {
 }
 
 *::placeholder {
-  color: #3993A4;
+  color: #263A54;
 }
 
 .submit-button {
@@ -162,6 +162,8 @@ input:focus {
   font-size: 10px;
   margin-bottom: -5px;
 }
+
+
 
 /* ----- SUBMITTED EVENTS ----- */
 
