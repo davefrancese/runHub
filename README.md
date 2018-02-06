@@ -11,5 +11,5 @@ An app that allows users to find race events in their area. Admin login that all
 
 ### For You
 
-Fork and Clone
-npm install
+* Fork and Clone
+* npm install
