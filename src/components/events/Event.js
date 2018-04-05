@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Location from './Location'
+import { Link } from 'react-router-dom';
 
 class Event extends Component {
 
   render() {
     return (
-      <div className="event-list-item" onClick="">
-        <a href="#">
+      <div className="event-list-item">
+        <Link to={`${this.props.event.runId}`}>
           <h1><i className="fa fa-calendar" aria-hidden="true"></i> {this.props.event.date}</h1>
           <h2><i className="fa fa-ticket" aria-hidden="true"></i> {this.props.event.name}</h2>
           <p><i className="fa fa-road" aria-hidden="true"></i> {this.props.event.distance}</p>
@@ -21,7 +21,7 @@ class Event extends Component {
           <p>Twitter: {this.props.event.twitter}</p>
           <p>Instagram: {this.props.event.instagram}</p>
           <p>{this.props.event.description}</p> */}
-        </a>
+        </Link>
       </div>
     );
   }

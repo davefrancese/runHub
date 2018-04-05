@@ -7,7 +7,7 @@ class Location extends Component {
       <div className="location-container">
         <form>
           <p>Enter your city and state<br /> to find events near you.</p>
-          <input className="location-input submit-input" type="text" placeholder=""/>
+          <input className="location-input submit-input" type="text" placeholder="ex. Raleigh, NC"/>
           {/* <p>Enter your state</p> */}
           {/* <input className="location-input submit-input" type="text" placeholder=""/> */}
           <br />
