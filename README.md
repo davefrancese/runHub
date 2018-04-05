@@ -13,3 +13,5 @@ An app that allows users to find race events in their area. Admin login that all
 
 * Fork and Clone
 * npm install
+* npm start
+* app runs on port 3000
